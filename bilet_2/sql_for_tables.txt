@@ -1,0 +1,18 @@
+CREATE TABLE segments (
+	id SERIAL PRIMARY KEY,
+	segment VARCHAR(50),
+	total_sales NUMERIC(10, 2),
+	median_sales NUMERIC(10, 2),
+	total_quantity INT,
+	total_returns INT,
+	total_amount_orders INT,
+	total_amount_customers INT
+);
+
+CREATE TABLE returns_otchet (
+	product_id VARCHAR(50),
+	product_name VARCHAR(150),
+	category VARCHAR(50),
+	total_returns INT,
+	total_lost_profit NUMERIC(10, 2)
+);
